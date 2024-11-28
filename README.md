@@ -4,7 +4,7 @@
 
 # [LynxHub](https://github.com/KindaBrazy/LynxHub) Extension Development Guide
 
-Comprehensive guide for creating extensions for LynxHub.
+Guide for creating extensions for LynxHub.
 
 </div>
 
@@ -17,6 +17,7 @@ Comprehensive guide for creating extensions for LynxHub.
 - [Extension Configuration and API Reference](#extension-configuration-and-api-reference)
     - [Renderer Tips: `Extension.tsx`](#renderer-tips-extensiontsx)
     - [Main Tips: `lynxExtension.ts`](#main-tips-lynxextensionts)
+- [Add Your Extension to the LynxHub Extensions List](#add-your-extension-to-the-lynxhub-extensions-list)
 
 ---
 
@@ -69,10 +70,16 @@ Follow these steps to prepare your environment for developing and testing LynxHu
 > **Extension Root Folder**
 > - `lynxExtension.json`
 > - `scripts/`
->   - `main/`
->     - `mainEntry.mjs`
->   - `renderer/`
->     - `rendererEntry.mjs`
+    >
+
+- `main/`
+  >
+- `mainEntry.mjs`
+
+> - `renderer/`
+    >
+
+- `rendererEntry.mjs`
 
 ---
 
@@ -90,8 +97,7 @@ For details on available types and APIs, refer to:
 - **Mandatory Export**: The file must export an `InitialExtensions` method.
 - **Example Implementation**: A basic implementation is provided in the InitialExtensions method for you to use as a
   reference or starting point.
-- **Execution Context**: Runs in the Electron renderer process (browser-like environment).
-- **Purpose**: Executes in the Electron renderer process (browser environment).
+- **Execution Context**: Executes in the Electron renderer process (browser environment).
 
 ---
 
@@ -100,8 +106,12 @@ For details on available types and APIs, refer to:
 - **Mandatory Export**: The file must export an `initialExtension` method.
 - **Example Implementation**: A basic implementation is provided in the initialExtension method for you to use as a
   reference or starting point.
-- **Execution Context**: Runs in the Electron main process (Node.js environment).
-- **Purpose**: Executes in the Electron main process (Node.js environment)
+- **Execution Context**: Executes in the Electron main process (Node.js environment)
+
+## Add Your Extension to the LynxHub Extensions List
+
+To include your extension in the official LynxHub Extensions list, follow the instructions provided in
+the [LynxHub-Extensions repository](https://github.com/KindaBrazy/LynxHub-Extensions).
 
 [lynxhub-dev-env]:https://github.com/KindaBrazy/LynxHub?tab=readme-ov-file#-development
 
