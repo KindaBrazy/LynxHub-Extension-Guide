@@ -71,9 +71,9 @@ Follow these steps to prepare your environment for developing and testing LynxHu
 > - `lynxExtension.json`
 > - `scripts/`
 >  - `main/`
->  - `mainEntry.mjs`
-> - `renderer/`
->  - `rendererEntry.mjs`
+>    - `mainEntry.mjs`
+>  - `renderer/`
+>    - `rendererEntry.mjs`
 
 ---
 
