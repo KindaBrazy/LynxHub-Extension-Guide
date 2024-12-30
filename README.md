@@ -70,16 +70,10 @@ Follow these steps to prepare your environment for developing and testing LynxHu
 > **Extension Root Folder**
 > - `lynxExtension.json`
 > - `scripts/`
-    >
-
-- `main/`
-  >
-- `mainEntry.mjs`
-
+>  - `main/`
+>  - `mainEntry.mjs`
 > - `renderer/`
-    >
-
-- `rendererEntry.mjs`
+>  - `rendererEntry.mjs`
 
 ---
 
